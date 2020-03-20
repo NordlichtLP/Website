@@ -1,7 +1,7 @@
 <?php
 
 if (isset($_POST['submit'])) {
-  $subject = $_POST ['betreff'];
+  $subject = $_POST['betreff'];
   $mailFrom = $_POST['mail'];
   $message = $_POST['message'];
 
@@ -11,6 +11,6 @@ if (isset($_POST['submit'])) {
 
 
   mail($mailTo, $subject, $txt, $headers);
-  header("Location: /Website/#");
+  header("Location: /Website/#home");
 }
 ?>
